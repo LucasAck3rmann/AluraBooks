@@ -1,0 +1,38 @@
+.secao_azul{
+    height: 1024px;
+    width: 650px;
+    background: var(--azul-degrade);  
+}
+
+.fundo_direito{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: row;
+    padding-bottom: 112px;
+    padding-top: 100px;
+}
+
+.container__titulo--branco{
+    color: white;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    color: white;
+    font-family: var(--fonte-principal);
+}
+
+.bem_vindo{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.acesse{
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 400; 
+}
