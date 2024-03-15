@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/AluraBooks/styles.css">  
+    <link rel="stylesheet" href="/AluraBooks/styles.css">
+    <link rel="stylesheet" href="/AluraBooks/styles/forms.css">   
 </head>
-<body>
+<body class="centerri">
     <section class="secao_azul">
     <div class="fundo_direito">
         <img src="/AluraBooks/img/Logo.svg" alt="Logo da Alurabooks">
@@ -21,8 +22,30 @@
     <div class="text">
         <h2 class="bem_vindo">Bem-vindo de volta!</h2>
         <h3 class="acesse">Acesse sua conta agora mesmo</h3>
-        <a class="botões__ancora">Acesse</a>
+        <a class="botao__ancora" href="#">Acesse</a>
+        <a class="paragraf" href="#">Esqueci minha senha</a>
     </div>
+    <div class="login">
+    <div class="log">
+        <hr class="hrzin">
+        <p class="entre">Ou entre com</p>
+        <hr class="hrzin">
+    </div>
+    <div class="log_google">
+        <img src="/AluraBooks/img/Google__G__Logo 1.svg">
+        <p>Google</p>
+    </div>
+</div>
+</section>
+<section class="secao_cinza">
+        <h1 class="crie_conta">Crie sua conta</h1>
+        <p class="seus_dados">Preencha seus dados</p>
+        <form class="formulario">
+            <input class="nome" type="text" name="nome" placeholder="Nome">
+            <input class="email" type="e-mail" name="email" placeholder="Digite seu e-mail">
+            <input class="senha" type="password" name="senha" placeholder="Digite sua Senha">
+            <input class="cadastrar" type="submit" name="enviar" value="Enviar">    
+        </form>
 </section>
 </body>
 </html>

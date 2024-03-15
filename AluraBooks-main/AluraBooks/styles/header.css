@@ -67,7 +67,9 @@
 }
 
 .container__titulo {
+    color: black;
     display: none;
+    text-decoration: none;
 }
 
 .opções {

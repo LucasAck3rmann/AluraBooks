@@ -1,7 +1,18 @@
+
+.centerri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    background-color: #F5F5F5;
+}
+
 .secao_azul{
-    height: 1024px;
-    width: 650px;
+    height: 625px;
+    width: 367px;
     background: var(--azul-degrade);  
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .fundo_direito{
@@ -36,3 +47,85 @@
     font-size: 14px;
     font-weight: 400; 
 }
+
+.botao__ancora{
+    margin-top: 45px;
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.paragraf{
+    text-decoration:none;
+    color: white;
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entre{
+    color: white;
+    font-size: 14px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.hrzin{
+    width: 95px;
+}
+
+.log_google{
+    gap: 8px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 328px;
+    height: 58px;
+}
+
+.login{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao_cinza{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 720px;
+    height: 625px;
+    background-color: #EBECEE;
+    
+}
+
+.crie_conta{
+    padding-top: 80px;
+    color: #EB9B00;
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.seus_dados{
+    color: var(--azul);
+    font-size: 20px;
+    font-weight: 500; 
+    padding-bottom: 65px;
+}
+
+
