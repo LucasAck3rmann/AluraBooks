@@ -5,7 +5,7 @@
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5;
+    background-color: #F5F5f5;
 }
 
 .central{
@@ -93,7 +93,6 @@
     gap: 8px;
     border: 2px solid grey;
     border-radius: 10px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,3 +133,100 @@
     padding-bottom: 35px;
 }
   
+@media only screen and (max-width: 768px) {
+    .t_0{
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .central {
+        overflow-x: hidden;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .secao_azul, .secao_cinza {
+        overflow-x: hidden;
+        width: 100vw;
+        height: 100%; 
+        padding: 0px;
+    }
+
+    .container__titulo--branco {
+        font-size: 24px;
+    }
+
+    .text {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .log, .log_google {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .formulario {
+        width: 700px;
+    }
+    .entre{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hrzin{
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .t_0{
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .central {
+        overflow-x: hidden;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .secao_azul, .secao_cinza {
+        overflow-x: hidden;
+        width: 100vw;
+        height: 100%; 
+        padding: 0px;
+    }
+
+    .container__titulo--branco {
+        font-size: 24px;
+    }
+
+    .text {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .log, .log_google {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .formulario {
+        width: 700px;
+    }
+    .entre{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hrzin{
+        width: 35vw;
+    }
+}
