@@ -153,6 +153,7 @@
         width: 100vw;
         height: 100%; 
         padding: 0px;
+        border-radius: 0px;
     }
 
     .container__titulo--branco {
