@@ -28,6 +28,7 @@
     justify-content: center; 
     flex-direction: row;
     padding-top: 100px;
+    padding-bottom: 120px;
 }
 
 .container__titulo--branco{
@@ -69,7 +70,7 @@
     color: white;
     font-size: 12px;
     padding-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .log{
@@ -130,7 +131,7 @@
     color: var(--azul);
     font-size: 20px;
     font-weight: 500; 
-    padding-bottom: 35px;
+    padding-bottom: 115px;
 }
   
 @media only screen and (max-width: 768px) {
