@@ -76,9 +76,9 @@
                 <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
                 <p class="container__texto">Minha sacola</p>
             </a>
-            <a href="./paginas/perfil_usuario.html" class="container__link">
-                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
-                <p class="container__texto">Meu perfil</p>
+            <a href="./paginas/perfil_usuario.html" class="container__link" id="link_usuario">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem" id="link_usuario">
+                <p id="link_usuario" class="container__texto">Meu perfil</p>
             </a>
         </div>
     </header>
@@ -328,6 +328,12 @@
             },
         });
     </script>
+    <script>
+    window.onload = function() {
+        if (localStorage.getItem('visitedProfile')) {
+            document.getElementById('link_usuario').href = '/paginas/config_usuario.html';
+        }
+    }
+</script>
 </body>
-
 </html>

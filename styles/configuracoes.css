@@ -1,0 +1,104 @@
+.usuario_config{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    width: 100vw;
+    background: var(--azul-degrade);
+    gap: 40px;
+}
+
+.config_principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 12px;
+    margin-right: 800px;
+}
+
+.usuario_config__titulo{
+    font-size: 30px;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+.usuario_config__texto{
+    width: 75px;
+    font-size: 18px;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    background: #EB9B00;
+    border-radius: 20px;
+    padding: 5px 5px;
+}
+
+.usuario_config__descricao{
+    font-size: 18px;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+
+.usuario_config__config{
+    font-size: 18px;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    width: 135px;
+    background: #EB9B00;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+.usuario_estatisticas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 996px;
+    width: 100vw;
+    background: var(--branco);
+    gap: 40px;
+}
+
+.usuario_estatisticas__conteudo_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.usuario_estatisticas__conteudo{
+    border: #ECECEC 2px solid;
+}
+
+.usuario_estatisticas__dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap:20px;
+    border-top:#ECECEC 2px solid;
+    padding: 5px;
+}
+
+.usuario_estatisticas__titulo{
+    font-size: 30px;
+    color: var(--azul-degrade);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+.usuario_estatisticas__subtitulo{
+    font-size: 30px;
+    color: var(--azul-degrade);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+.usuario_estatisticas__texto{
+    font-size: 18px;
+    color: var(--azul-degrade);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+}

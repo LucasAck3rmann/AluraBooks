@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu perfil</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/forms.css">
+    <link rel="stylesheet" href="/styles/perfil_usuario.css">  
+    <link rel="stylesheet" href="/styles/configuracoes.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="/img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            <a href="/index.html" class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</a>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="/img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="/img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="/paginas/perfil_usuario.html" class="container__link" id="link_usuario">
+                <img src="/img/Usuario.svg" alt="Meu perfil" class="container__imagem" id="link_usuario">
+                <p id="link_usuario" class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="usuario_config">
+        <img src="/img/avatar.svg" alt="Imagem de perfil" class="usuario_config__imagem">
+        <div class="config_principal">
+            <h1 class="usuario_config__titulo"></h1>
+            <p class="usuario_config__texto">Gerente</p>
+            <p class="usuario_config__descricao">Olá, meu nome é Lucas, tenho 15 anos e adoro programar.</p>
+        </div>
+        <p class="usuario_config__config">Configurações</p>
+    </section>
+    <section class="usuario_estatisticas">
+        <h1 class="usuario_estatisticas__titulo">Dashboard</h1>
+        <div class="usuario_estatisticas__conteudo_div">
+        <div class="usuario_estatisticas__conteudo">
+            <img src="/img/image container.png" alt="Gráfico" class="usuario_estatisticas__imagem">
+            <div class="usuario_estatisticas__dados">
+                <h2 class="usuario_estatisticas__subtitulo">Livro</h2>
+                <p class="usuario_estatisticas__texto">Javascript Assertivo</p>
+        </div>
+        <div class="usuario_estatisticas__conteudo">
+            <img src="/img/image container.png" alt="Gráfico" class="usuario_estatisticas__imagem">
+            <div class="usuario_estatisticas__dados">
+                <h2 class="usuario_estatisticas__subtitulo">Livro</h2>
+                <p class="usuario_estatisticas__texto">Liderança em Design</p>
+        </div>
+    </div>
+    </section>
+    <script>
+        window.onload = function() {
+            var nome = localStorage.getItem('nomeUsuario');
+            if (nome) {
+                document.querySelector('.usuario_config__titulo').textContent = nome;
+            }
+        }
+    </script>
+</body>
+</html>

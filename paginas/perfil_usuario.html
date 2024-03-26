@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
         <hr class="hrzin">
     </div>
     <div class="log_google">
-        <img src="/img/Google__G__Logo 1.svg">
+        <img src="/img/Google__G__Logo 1.svg" alt="Logo da Google">
         <p>Google</p>
     </div>
 </div>
@@ -42,13 +42,20 @@
 <section class="secao_cinza">
         <h1 class="crie_conta">Crie sua conta</h1>
         <p class="seus_dados">Preencha seus dados</p>
-        <form action="/index.html" class="formulario">
-            <input class="nome" type="text" name="nome" placeholder="Nome" required>
+        <form action="/paginas/config_usuario.html" class="formulario" id="formulario">
+            <input id="nome" class="nome" type="text" name="nome" placeholder="Nome" required>
             <input class="email" type="e-mail" name="email" placeholder="Digite seu e-mail" required>
             <input class="senha" type="password" name="senha" placeholder="Digite sua Senha" required>
             <input class="cadastrar" type="submit" name="enviar" value="Enviar" href="/AluraBooks/index.html"required>    
         </form>
 </section>
 </div>
+<script>
+    localStorage.setItem('visitedProfile', 'true');
+    document.getElementById('formulario').onsubmit = function() {
+        var nome = document.getElementById('nome').value;
+        localStorage.setItem('nomeUsuario', nome);
+    }
+</script>
 </body>
 </html>
