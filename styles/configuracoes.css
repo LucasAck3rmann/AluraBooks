@@ -1,3 +1,7 @@
+body{
+    overflow-x:hidden ;
+}
+
 .usuario_config{
     display: flex;
     flex-direction: row;
@@ -67,6 +71,7 @@
 .usuario_estatisticas__conteudo_div{
     display: flex;
     flex-direction: row;
+    gap: 30px;
 }
 
 .usuario_estatisticas__conteudo{
@@ -101,4 +106,67 @@
     color: var(--azul-degrade);
     font-family: var(--fonte-principal);
     font-weight: 500;
+}
+
+
+.usuario_controle{
+    background-color: white;
+    border-top: #ECECEC 2px solid;
+    width: 100vw;
+    height: 378px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.usuario_controle__dados{
+    font-size: 30px;
+    color: var(--azul-degrade);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+.usuario_controle__itens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 300px;
+}
+
+.usuario_controle__conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.usuario_controle__imagem{
+    background: #EB9B00;
+    border-radius: 100px;
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuario_controle__h{
+    font-size: 25px;
+    color: var(--azul-degrade);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+}
+
+.usuario_controle__usuario{
+    width: 66px;
+    height: 66px;
+}
+
+@media only screen and (max-width: 768px) {
+    .usuario_estatisticas__conteudo{
+        width: 100vw;
+    }
 }

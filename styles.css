@@ -5,6 +5,8 @@
 @import url("styles/contato.css");
 @import url("styles/rodapé.css");
 @import url("styles/perfil_usuario.css");
+@import url("/styles/forms.css");
+@import url("/styles/configuracoes.css");
 
 :root {
     --cor-de-fundo: #EBECEE;
